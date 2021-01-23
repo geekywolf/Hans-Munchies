@@ -1,0 +1,75 @@
+
+
+.main{
+    width: 100vw;
+}
+.special-treats{
+    background-color: black;
+    width: 100%;
+}
+.grid-text{
+    color: #F39ABD;
+    font: 30px sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 8rem;
+    padding-top: 2rem;
+}
+.picture-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 0.1rem;
+    grid-template-areas: 
+        'img-1 img-2 img-3'
+        'img-4 img-5 img-6'
+        'img-8 img-7 img-9';
+    margin: 1rem 8rem;
+}
+
+.picture-grid section img{
+    width: 100%;
+    min-width: 100px;
+    position: relative;
+}
+
+.img-1{
+    grid-area: img-1;
+}
+.img-2{
+    grid-area: img-2;
+}
+.img-3{
+    grid-area: img-3;
+}
+.img-4{
+    grid-area: img-4;
+}
+.img-5{
+    grid-area: img-5;
+    margin-top: -25px;
+}
+.img-6{
+    grid-area: img-6;
+}
+.img-7{
+    grid-area: img-7;
+    margin-top: -25px;
+}
+.img-8{
+    grid-area: img-8;
+}
+.img-9{
+    grid-area: img-9;
+}
+.img-9 img{
+    max-height: 180px;
+}
+table{
+    margin-top: 10px;
+    margin-left: 8rem;
+    color: whitesmoke;
+}
+thead{
+    font-size: 40px;
+}

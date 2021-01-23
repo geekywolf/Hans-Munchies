@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hans Munchies</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo"><img src ="images/logo-header.png" style="width: 125px;"></a>
+        <ul>
+            <li><a href="/index.html" onclick="toggle()">Home</a></li>
+            <li><a href="/Pages/About.html" onclick="toggle()">About</a></li>
+            <li><a href="#services" onclick="toggle()">Services</a></li>
+            <li><a href="#contact" onclick="toggle()">Contact</a></li>
+
+           
+        </ul>
+        
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section class="banner" id="home">
+        <h2><span style="color: white;opacity: 1;">Sugary</span><br/><span style="color:  #575651; opacity: 1;">Delight</span></h2> 
+    </section>
+    <!-- <a href="#" class="btn">Sugary delights</a> -->
+    <section class="special-intro">
+        <!-- This should be a plain text not a link also make it bolder -->
+            <h3><a href="">Our Specials</a></h3>  
+    </section>
+
+    <!-- This section each image needs to be at the same height could you do that? -->
+    <section class="sec" id="services">
+        <div class="services">
+            <div class="box">
+                <div class="iconBx">
+                    <img src="/images/Signature 8 Ultimate Chocolate cake.jpg">
+                </div>
+            </div>
+        <div class="box">
+            <div class="iconBx">
+                <img src="/images/Zobo Mocktail.jpg">
+            </div>
+        </div>
+            <div class="box">
+                <div class="iconBx">
+                    <img src="/images/Birthday supreme cupcakes.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doughnutty-delight">
+        <h2 class="doughnutty-delight-text"</h2>
+   </section>
+    <!--
+    <header class="header">
+            <img src="/images/logo-header.png">
+       <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="/Pages/Catalogue.html">Catalogue</a></li>
+           <li><a href="/Pages/About.html">About</a></li>
+           <li><a href="/Pages/Cart.html">Cart</a></li>
+       </ul>
+       <h2><span style="color: white;opacity: 1;">Sugary</span><br/><span style="color:  #575651; opacity: 1;">Delight</span></h2> 
+    </header>
+        <a href="#" class="btn">Sugary delights</a>
+    <section class="special-intro">
+            <h3><a href="">Our Specials</a></h3>  
+    </section>
+    <section class="sec" id="services">
+        <div class="services">
+            <div class="box">
+                <div class="iconBx">
+                    <img src="/images/icon1-min.jpg">
+                </div>
+            </div>
+        <div class="box">
+            <div class="iconBx">
+                <img src="/images/icon2-min.jpg">
+            </div>
+        </div>
+            <div class="box">
+                <div class="iconBx">
+                    <img src="/images/icon3-min.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doughnutty-delight">
+         <h2 class="doughnutty-delight-text"</h2>
+    </section>
+    <footer>
+       <div class="footer-wrapper">
+            <div class="single-footer">
+                <h2>THINGS WE DO</h2>
+                <ul>
+                    <li>Customised Cards</li>
+                    <li>Christmas Hampers</li>
+                    <li>Event Planing</li>
+                    <li>Event Catering</li>
+                </ul>
+            </div>
+            <div class="single-footer">
+                <h2>ABOUT US</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Terms & services</li>
+                </ul>
+            </div>
+            <div class="single-footer">
+                <h2>CONTACT US</h2>
+                <ul>
+                    <li>Whatsapp</li>
+                    <li>Email</li>
+                </ul>
+            </div>
+       </div> 
+    </footer>
+-->
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    function toggle(){
+        var header = document.querySelector("header");
+        header.classList.toggle("active");
+        
+    }
+</script>
+</body>
+</html>
